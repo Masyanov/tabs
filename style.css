@@ -1,0 +1,46 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+.tabs__nav {
+    display: flex;
+}
+.tabs__nav-btn {
+    width: 100%;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #eeeded;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+.tabs__nav-btn:last-child {
+    border-right: none;
+}
+.tabs__nav-btn:hover {
+    background: white;
+}
+.tabs__nav-btn.active {
+    background: rgb(223, 223, 223);
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+    box-shadow: inset 4px 4px 12px #dddddd,
+                inset -4px -4px 12px #ffffff;
+}
+.tabs__content {
+    padding: 30px;
+    margin: 0 15px;
+    background: rgb(223, 223, 223);
+}
+.tabs__item {
+    display: none;
+}
+.tabs__item.active {
+    display: block;
+}
+
